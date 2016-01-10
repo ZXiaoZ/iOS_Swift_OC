@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F90F9E21C316BA6002617FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90F9E11C316BA6002617FF /* main.m */; };
+		9F90F9E51C316BA6002617FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90F9E41C316BA6002617FF /* AppDelegate.m */; };
+		9F90F9EB1C316BA6002617FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F90F9E91C316BA6002617FF /* Main.storyboard */; };
+		9F90F9F01C316BA6002617FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F90F9EE1C316BA6002617FF /* LaunchScreen.storyboard */; };
+		9F90FA251C316C20002617FF /* XZCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA131C316C20002617FF /* XZCell.m */; };
+		9F90FA261C316C20002617FF /* XZClassCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA151C316C20002617FF /* XZClassCellView.m */; };
+		9F90FA271C316C20002617FF /* XZCurrentWeek.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA171C316C20002617FF /* XZCurrentWeek.m */; };
+		9F90FA281C316C20002617FF /* XZTimetableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA191C316C20002617FF /* XZTimetableVC.m */; };
+		9F90FA291C316C20002617FF /* XZTimetableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA1B1C316C20002617FF /* XZTimetableView.m */; };
+		9F90FA2A1C316C20002617FF /* XZWeekBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA1D1C316C20002617FF /* XZWeekBar.m */; };
+		9F90FA2B1C316C20002617FF /* XZWeekBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA1F1C316C20002617FF /* XZWeekBarItem.m */; };
+		9F90FA351C316EE8002617FF /* BubbleChooseClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA2E1C316EE8002617FF /* BubbleChooseClassViewController.m */; };
+		9F90FA361C316EE8002617FF /* BubbleChooseClassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F90FA2F1C316EE8002617FF /* BubbleChooseClassViewController.xib */; };
+		9F90FA371C316EE8002617FF /* bubbleImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F90FA301C316EE8002617FF /* bubbleImage.png */; };
+		9F90FA381C316EE8002617FF /* bubbleImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F90FA311C316EE8002617FF /* bubbleImage@2x.png */; };
+		9F90FA391C316EE8002617FF /* bubbleImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F90FA321C316EE8002617FF /* bubbleImage@3x.png */; };
+		9F90FA3A1C316EE8002617FF /* BubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA341C316EE8002617FF /* BubbleView.m */; };
+		9F90FA3C1C3170B8002617FF /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F90FA3B1C3170B8002617FF /* libsqlite3.0.tbd */; };
+		9F90FA4B1C3170CC002617FF /* NSObject+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA3F1C3170CC002617FF /* NSObject+Help.m */; };
+		9F90FA4C1C3170CC002617FF /* XZAttendanceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA411C3170CC002617FF /* XZAttendanceModel.m */; };
+		9F90FA4D1C3170CC002617FF /* XZNoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA431C3170CC002617FF /* XZNoteModel.m */; };
+		9F90FA4E1C3170CC002617FF /* XZTimetableDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA451C3170CC002617FF /* XZTimetableDB.m */; };
+		9F90FA4F1C3170CC002617FF /* XZTimetableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA471C3170CC002617FF /* XZTimetableModel.m */; };
+		9F90FA501C3170CC002617FF /* XZTimetableService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA4A1C3170CC002617FF /* XZTimetableService.m */; };
+		9F90FA5D1C3170EF002617FF /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA531C3170EF002617FF /* FMDatabase.m */; };
+		9F90FA5E1C3170EF002617FF /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA551C3170EF002617FF /* FMDatabaseAdditions.m */; };
+		9F90FA5F1C3170EF002617FF /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA571C3170EF002617FF /* FMDatabasePool.m */; };
+		9F90FA601C3170EF002617FF /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA591C3170EF002617FF /* FMDatabaseQueue.m */; };
+		9F90FA611C3170EF002617FF /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA5C1C3170EF002617FF /* FMResultSet.m */; };
+		9F90FA751C3174A6002617FF /* EAColourfulProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA641C3174A6002617FF /* EAColourfulProgressView.m */; };
+		9F90FA761C3174A6002617FF /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA661C3174A6002617FF /* FXBlurView.m */; };
+		9F90FA771C3174A6002617FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F90FA671C3174A6002617FF /* Images.xcassets */; };
+		9F90FA781C3174A6002617FF /* JKPopMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA691C3174A6002617FF /* JKPopMenuItem.m */; };
+		9F90FA791C3174A6002617FF /* JKPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA6B1C3174A6002617FF /* JKPopMenuView.m */; };
+		9F90FA7A1C3174A6002617FF /* KLAbsentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA6D1C3174A6002617FF /* KLAbsentViewController.m */; };
+		9F90FA7B1C3174A6002617FF /* KLAbsentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F90FA6E1C3174A6002617FF /* KLAbsentViewController.xib */; };
+		9F90FA7C1C3174A6002617FF /* KLMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA701C3174A6002617FF /* KLMenuViewController.m */; };
+		9F90FA7D1C3174A6002617FF /* KLMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F90FA711C3174A6002617FF /* KLMenuViewController.xib */; };
+		9F90FA7E1C3174A6002617FF /* Progress.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F90FA721C3174A6002617FF /* Progress.png */; };
+		9F90FA7F1C3174A6002617FF /* start.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F90FA731C3174A6002617FF /* start.jpg */; };
+		9F90FA801C3174A6002617FF /* Track.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F90FA741C3174A6002617FF /* Track.png */; };
+		9FC5EE241C317CDE00CCC63A /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC5EE1B1C317CDE00CCC63A /* JVFloatLabeledTextField.m */; };
+		9FC5EE251C317CDE00CCC63A /* XZClassPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC5EE1D1C317CDE00CCC63A /* XZClassPickerVC.m */; };
+		9FC5EE261C317CDE00CCC63A /* XZNumValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC5EE1F1C317CDE00CCC63A /* XZNumValidator.m */; };
+		9FC5EE271C317CDE00CCC63A /* XZPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC5EE211C317CDE00CCC63A /* XZPickerView.m */; };
+		9FC5EE281C317CDE00CCC63A /* XZRoundRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC5EE231C317CDE00CCC63A /* XZRoundRect.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9F90F9DD1C316BA6002617FF /* keptTimetable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keptTimetable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F90F9E11C316BA6002617FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F90F9E31C316BA6002617FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9F90F9E41C316BA6002617FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9F90F9EA1C316BA6002617FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F90F9EF1C316BA6002617FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F90F9F11C316BA6002617FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F90FA121C316C20002617FF /* XZCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCell.h; sourceTree = "<group>"; };
+		9F90FA131C316C20002617FF /* XZCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCell.m; sourceTree = "<group>"; };
+		9F90FA141C316C20002617FF /* XZClassCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZClassCellView.h; sourceTree = "<group>"; };
+		9F90FA151C316C20002617FF /* XZClassCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZClassCellView.m; sourceTree = "<group>"; };
+		9F90FA161C316C20002617FF /* XZCurrentWeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCurrentWeek.h; sourceTree = "<group>"; };
+		9F90FA171C316C20002617FF /* XZCurrentWeek.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCurrentWeek.m; sourceTree = "<group>"; };
+		9F90FA181C316C20002617FF /* XZTimetableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTimetableVC.h; sourceTree = "<group>"; };
+		9F90FA191C316C20002617FF /* XZTimetableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTimetableVC.m; sourceTree = "<group>"; };
+		9F90FA1A1C316C20002617FF /* XZTimetableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTimetableView.h; sourceTree = "<group>"; };
+		9F90FA1B1C316C20002617FF /* XZTimetableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTimetableView.m; sourceTree = "<group>"; };
+		9F90FA1C1C316C20002617FF /* XZWeekBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZWeekBar.h; sourceTree = "<group>"; };
+		9F90FA1D1C316C20002617FF /* XZWeekBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZWeekBar.m; sourceTree = "<group>"; };
+		9F90FA1E1C316C20002617FF /* XZWeekBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZWeekBarItem.h; sourceTree = "<group>"; };
+		9F90FA1F1C316C20002617FF /* XZWeekBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZWeekBarItem.m; sourceTree = "<group>"; };
+		9F90FA2D1C316EE8002617FF /* BubbleChooseClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleChooseClassViewController.h; sourceTree = "<group>"; };
+		9F90FA2E1C316EE8002617FF /* BubbleChooseClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleChooseClassViewController.m; sourceTree = "<group>"; };
+		9F90FA2F1C316EE8002617FF /* BubbleChooseClassViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BubbleChooseClassViewController.xib; sourceTree = "<group>"; };
+		9F90FA301C316EE8002617FF /* bubbleImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubbleImage.png; sourceTree = "<group>"; };
+		9F90FA311C316EE8002617FF /* bubbleImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubbleImage@2x.png"; sourceTree = "<group>"; };
+		9F90FA321C316EE8002617FF /* bubbleImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubbleImage@3x.png"; sourceTree = "<group>"; };
+		9F90FA331C316EE8002617FF /* BubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleView.h; sourceTree = "<group>"; };
+		9F90FA341C316EE8002617FF /* BubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleView.m; sourceTree = "<group>"; };
+		9F90FA3B1C3170B8002617FF /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		9F90FA3E1C3170CC002617FF /* NSObject+Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Help.h"; sourceTree = "<group>"; };
+		9F90FA3F1C3170CC002617FF /* NSObject+Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Help.m"; sourceTree = "<group>"; };
+		9F90FA401C3170CC002617FF /* XZAttendanceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAttendanceModel.h; sourceTree = "<group>"; };
+		9F90FA411C3170CC002617FF /* XZAttendanceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAttendanceModel.m; sourceTree = "<group>"; };
+		9F90FA421C3170CC002617FF /* XZNoteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZNoteModel.h; sourceTree = "<group>"; };
+		9F90FA431C3170CC002617FF /* XZNoteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZNoteModel.m; sourceTree = "<group>"; };
+		9F90FA441C3170CC002617FF /* XZTimetableDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTimetableDB.h; sourceTree = "<group>"; };
+		9F90FA451C3170CC002617FF /* XZTimetableDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTimetableDB.m; sourceTree = "<group>"; };
+		9F90FA461C3170CC002617FF /* XZTimetableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTimetableModel.h; sourceTree = "<group>"; };
+		9F90FA471C3170CC002617FF /* XZTimetableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTimetableModel.m; sourceTree = "<group>"; };
+		9F90FA491C3170CC002617FF /* XZTimetableService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTimetableService.h; sourceTree = "<group>"; };
+		9F90FA4A1C3170CC002617FF /* XZTimetableService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTimetableService.m; sourceTree = "<group>"; };
+		9F90FA521C3170EF002617FF /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		9F90FA531C3170EF002617FF /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		9F90FA541C3170EF002617FF /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		9F90FA551C3170EF002617FF /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		9F90FA561C3170EF002617FF /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		9F90FA571C3170EF002617FF /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		9F90FA581C3170EF002617FF /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		9F90FA591C3170EF002617FF /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		9F90FA5A1C3170EF002617FF /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		9F90FA5B1C3170EF002617FF /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		9F90FA5C1C3170EF002617FF /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		9F90FA631C3174A6002617FF /* EAColourfulProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAColourfulProgressView.h; sourceTree = "<group>"; };
+		9F90FA641C3174A6002617FF /* EAColourfulProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAColourfulProgressView.m; sourceTree = "<group>"; };
+		9F90FA651C3174A6002617FF /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		9F90FA661C3174A6002617FF /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		9F90FA671C3174A6002617FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9F90FA681C3174A6002617FF /* JKPopMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPopMenuItem.h; sourceTree = "<group>"; };
+		9F90FA691C3174A6002617FF /* JKPopMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPopMenuItem.m; sourceTree = "<group>"; };
+		9F90FA6A1C3174A6002617FF /* JKPopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPopMenuView.h; sourceTree = "<group>"; };
+		9F90FA6B1C3174A6002617FF /* JKPopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPopMenuView.m; sourceTree = "<group>"; };
+		9F90FA6C1C3174A6002617FF /* KLAbsentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLAbsentViewController.h; sourceTree = "<group>"; };
+		9F90FA6D1C3174A6002617FF /* KLAbsentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLAbsentViewController.m; sourceTree = "<group>"; };
+		9F90FA6E1C3174A6002617FF /* KLAbsentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLAbsentViewController.xib; sourceTree = "<group>"; };
+		9F90FA6F1C3174A6002617FF /* KLMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMenuViewController.h; sourceTree = "<group>"; };
+		9F90FA701C3174A6002617FF /* KLMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLMenuViewController.m; sourceTree = "<group>"; };
+		9F90FA711C3174A6002617FF /* KLMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLMenuViewController.xib; sourceTree = "<group>"; };
+		9F90FA721C3174A6002617FF /* Progress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Progress.png; sourceTree = "<group>"; };
+		9F90FA731C3174A6002617FF /* start.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = start.jpg; sourceTree = "<group>"; };
+		9F90FA741C3174A6002617FF /* Track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Track.png; sourceTree = "<group>"; };
+		9FC5EE1A1C317CDE00CCC63A /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextField.h; sourceTree = "<group>"; };
+		9FC5EE1B1C317CDE00CCC63A /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextField.m; sourceTree = "<group>"; };
+		9FC5EE1C1C317CDE00CCC63A /* XZClassPickerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZClassPickerVC.h; sourceTree = "<group>"; };
+		9FC5EE1D1C317CDE00CCC63A /* XZClassPickerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZClassPickerVC.m; sourceTree = "<group>"; };
+		9FC5EE1E1C317CDE00CCC63A /* XZNumValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZNumValidator.h; sourceTree = "<group>"; };
+		9FC5EE1F1C317CDE00CCC63A /* XZNumValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZNumValidator.m; sourceTree = "<group>"; };
+		9FC5EE201C317CDE00CCC63A /* XZPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZPickerView.h; sourceTree = "<group>"; };
+		9FC5EE211C317CDE00CCC63A /* XZPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZPickerView.m; sourceTree = "<group>"; };
+		9FC5EE221C317CDE00CCC63A /* XZRoundRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZRoundRect.h; sourceTree = "<group>"; };
+		9FC5EE231C317CDE00CCC63A /* XZRoundRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZRoundRect.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F90F9DA1C316BA6002617FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F90FA3C1C3170B8002617FF /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F90F9D41C316BA6002617FF = {
+			isa = PBXGroup;
+			children = (
+				9F90FA3B1C3170B8002617FF /* libsqlite3.0.tbd */,
+				9F90FA621C3174A6002617FF /* KLview */,
+				9F90FA511C3170EF002617FF /* fmdb */,
+				9F90FA3D1C3170CC002617FF /* model */,
+				9F90FA481C3170CC002617FF /* sevice */,
+				9F90FA2C1C316EE8002617FF /* KJview */,
+				9F90FA061C316C20002617FF /* timetable */,
+				9F90F9DF1C316BA6002617FF /* keptTimetable */,
+				9F90F9DE1C316BA6002617FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F90F9DE1C316BA6002617FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F90F9DD1C316BA6002617FF /* keptTimetable.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F90F9DF1C316BA6002617FF /* keptTimetable */ = {
+			isa = PBXGroup;
+			children = (
+				9F90F9E31C316BA6002617FF /* AppDelegate.h */,
+				9F90F9E41C316BA6002617FF /* AppDelegate.m */,
+				9F90F9E91C316BA6002617FF /* Main.storyboard */,
+				9F90F9EE1C316BA6002617FF /* LaunchScreen.storyboard */,
+				9F90F9F11C316BA6002617FF /* Info.plist */,
+				9F90F9E01C316BA6002617FF /* Supporting Files */,
+			);
+			path = keptTimetable;
+			sourceTree = "<group>";
+		};
+		9F90F9E01C316BA6002617FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F90F9E11C316BA6002617FF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F90FA061C316C20002617FF /* timetable */ = {
+			isa = PBXGroup;
+			children = (
+				9FC5EE191C317CDE00CCC63A /* classPicker */,
+				9F90FA121C316C20002617FF /* XZCell.h */,
+				9F90FA131C316C20002617FF /* XZCell.m */,
+				9F90FA141C316C20002617FF /* XZClassCellView.h */,
+				9F90FA151C316C20002617FF /* XZClassCellView.m */,
+				9F90FA161C316C20002617FF /* XZCurrentWeek.h */,
+				9F90FA171C316C20002617FF /* XZCurrentWeek.m */,
+				9F90FA1A1C316C20002617FF /* XZTimetableView.h */,
+				9F90FA1B1C316C20002617FF /* XZTimetableView.m */,
+				9F90FA1C1C316C20002617FF /* XZWeekBar.h */,
+				9F90FA1D1C316C20002617FF /* XZWeekBar.m */,
+				9F90FA1E1C316C20002617FF /* XZWeekBarItem.h */,
+				9F90FA1F1C316C20002617FF /* XZWeekBarItem.m */,
+				9F90FA181C316C20002617FF /* XZTimetableVC.h */,
+				9F90FA191C316C20002617FF /* XZTimetableVC.m */,
+			);
+			path = timetable;
+			sourceTree = "<group>";
+		};
+		9F90FA2C1C316EE8002617FF /* KJview */ = {
+			isa = PBXGroup;
+			children = (
+				9F90FA2D1C316EE8002617FF /* BubbleChooseClassViewController.h */,
+				9F90FA2E1C316EE8002617FF /* BubbleChooseClassViewController.m */,
+				9F90FA2F1C316EE8002617FF /* BubbleChooseClassViewController.xib */,
+				9F90FA301C316EE8002617FF /* bubbleImage.png */,
+				9F90FA311C316EE8002617FF /* bubbleImage@2x.png */,
+				9F90FA321C316EE8002617FF /* bubbleImage@3x.png */,
+				9F90FA331C316EE8002617FF /* BubbleView.h */,
+				9F90FA341C316EE8002617FF /* BubbleView.m */,
+			);
+			path = KJview;
+			sourceTree = "<group>";
+		};
+		9F90FA3D1C3170CC002617FF /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9F90FA451C3170CC002617FF /* XZTimetableDB.m */,
+				9F90FA441C3170CC002617FF /* XZTimetableDB.h */,
+				9F90FA3E1C3170CC002617FF /* NSObject+Help.h */,
+				9F90FA3F1C3170CC002617FF /* NSObject+Help.m */,
+				9F90FA401C3170CC002617FF /* XZAttendanceModel.h */,
+				9F90FA411C3170CC002617FF /* XZAttendanceModel.m */,
+				9F90FA421C3170CC002617FF /* XZNoteModel.h */,
+				9F90FA431C3170CC002617FF /* XZNoteModel.m */,
+				9F90FA461C3170CC002617FF /* XZTimetableModel.h */,
+				9F90FA471C3170CC002617FF /* XZTimetableModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9F90FA481C3170CC002617FF /* sevice */ = {
+			isa = PBXGroup;
+			children = (
+				9F90FA491C3170CC002617FF /* XZTimetableService.h */,
+				9F90FA4A1C3170CC002617FF /* XZTimetableService.m */,
+			);
+			path = sevice;
+			sourceTree = "<group>";
+		};
+		9F90FA511C3170EF002617FF /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				9F90FA521C3170EF002617FF /* FMDatabase.h */,
+				9F90FA531C3170EF002617FF /* FMDatabase.m */,
+				9F90FA541C3170EF002617FF /* FMDatabaseAdditions.h */,
+				9F90FA551C3170EF002617FF /* FMDatabaseAdditions.m */,
+				9F90FA561C3170EF002617FF /* FMDatabasePool.h */,
+				9F90FA571C3170EF002617FF /* FMDatabasePool.m */,
+				9F90FA581C3170EF002617FF /* FMDatabaseQueue.h */,
+				9F90FA591C3170EF002617FF /* FMDatabaseQueue.m */,
+				9F90FA5A1C3170EF002617FF /* FMDB.h */,
+				9F90FA5B1C3170EF002617FF /* FMResultSet.h */,
+				9F90FA5C1C3170EF002617FF /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		9F90FA621C3174A6002617FF /* KLview */ = {
+			isa = PBXGroup;
+			children = (
+				9F90FA631C3174A6002617FF /* EAColourfulProgressView.h */,
+				9F90FA641C3174A6002617FF /* EAColourfulProgressView.m */,
+				9F90FA651C3174A6002617FF /* FXBlurView.h */,
+				9F90FA661C3174A6002617FF /* FXBlurView.m */,
+				9F90FA671C3174A6002617FF /* Images.xcassets */,
+				9F90FA681C3174A6002617FF /* JKPopMenuItem.h */,
+				9F90FA691C3174A6002617FF /* JKPopMenuItem.m */,
+				9F90FA6A1C3174A6002617FF /* JKPopMenuView.h */,
+				9F90FA6B1C3174A6002617FF /* JKPopMenuView.m */,
+				9F90FA6C1C3174A6002617FF /* KLAbsentViewController.h */,
+				9F90FA6D1C3174A6002617FF /* KLAbsentViewController.m */,
+				9F90FA6E1C3174A6002617FF /* KLAbsentViewController.xib */,
+				9F90FA6F1C3174A6002617FF /* KLMenuViewController.h */,
+				9F90FA701C3174A6002617FF /* KLMenuViewController.m */,
+				9F90FA711C3174A6002617FF /* KLMenuViewController.xib */,
+				9F90FA721C3174A6002617FF /* Progress.png */,
+				9F90FA731C3174A6002617FF /* start.jpg */,
+				9F90FA741C3174A6002617FF /* Track.png */,
+			);
+			path = KLview;
+			sourceTree = "<group>";
+		};
+		9FC5EE191C317CDE00CCC63A /* classPicker */ = {
+			isa = PBXGroup;
+			children = (
+				9FC5EE1A1C317CDE00CCC63A /* JVFloatLabeledTextField.h */,
+				9FC5EE1B1C317CDE00CCC63A /* JVFloatLabeledTextField.m */,
+				9FC5EE1C1C317CDE00CCC63A /* XZClassPickerVC.h */,
+				9FC5EE1D1C317CDE00CCC63A /* XZClassPickerVC.m */,
+				9FC5EE1E1C317CDE00CCC63A /* XZNumValidator.h */,
+				9FC5EE1F1C317CDE00CCC63A /* XZNumValidator.m */,
+				9FC5EE201C317CDE00CCC63A /* XZPickerView.h */,
+				9FC5EE211C317CDE00CCC63A /* XZPickerView.m */,
+				9FC5EE221C317CDE00CCC63A /* XZRoundRect.h */,
+				9FC5EE231C317CDE00CCC63A /* XZRoundRect.m */,
+			);
+			path = classPicker;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F90F9DC1C316BA6002617FF /* keptTimetable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F90F9F41C316BA6002617FF /* Build configuration list for PBXNativeTarget "keptTimetable" */;
+			buildPhases = (
+				9F90F9D91C316BA6002617FF /* Sources */,
+				9F90F9DA1C316BA6002617FF /* Frameworks */,
+				9F90F9DB1C316BA6002617FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = keptTimetable;
+			productName = keptTimetable;
+			productReference = 9F90F9DD1C316BA6002617FF /* keptTimetable.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F90F9D51C316BA6002617FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = zxz;
+				TargetAttributes = {
+					9F90F9DC1C316BA6002617FF = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = J49RT79283;
+					};
+				};
+			};
+			buildConfigurationList = 9F90F9D81C316BA6002617FF /* Build configuration list for PBXProject "keptTimetable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F90F9D41C316BA6002617FF;
+			productRefGroup = 9F90F9DE1C316BA6002617FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F90F9DC1C316BA6002617FF /* keptTimetable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F90F9DB1C316BA6002617FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F90F9F01C316BA6002617FF /* LaunchScreen.storyboard in Resources */,
+				9F90FA771C3174A6002617FF /* Images.xcassets in Resources */,
+				9F90FA391C316EE8002617FF /* bubbleImage@3x.png in Resources */,
+				9F90FA371C316EE8002617FF /* bubbleImage.png in Resources */,
+				9F90FA7D1C3174A6002617FF /* KLMenuViewController.xib in Resources */,
+				9F90FA7B1C3174A6002617FF /* KLAbsentViewController.xib in Resources */,
+				9F90FA801C3174A6002617FF /* Track.png in Resources */,
+				9F90FA381C316EE8002617FF /* bubbleImage@2x.png in Resources */,
+				9F90FA7E1C3174A6002617FF /* Progress.png in Resources */,
+				9F90FA361C316EE8002617FF /* BubbleChooseClassViewController.xib in Resources */,
+				9F90FA7F1C3174A6002617FF /* start.jpg in Resources */,
+				9F90F9EB1C316BA6002617FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F90F9D91C316BA6002617FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F90FA251C316C20002617FF /* XZCell.m in Sources */,
+				9F90FA791C3174A6002617FF /* JKPopMenuView.m in Sources */,
+				9F90FA281C316C20002617FF /* XZTimetableVC.m in Sources */,
+				9FC5EE241C317CDE00CCC63A /* JVFloatLabeledTextField.m in Sources */,
+				9F90FA7A1C3174A6002617FF /* KLAbsentViewController.m in Sources */,
+				9FC5EE281C317CDE00CCC63A /* XZRoundRect.m in Sources */,
+				9F90FA7C1C3174A6002617FF /* KLMenuViewController.m in Sources */,
+				9F90FA291C316C20002617FF /* XZTimetableView.m in Sources */,
+				9FC5EE261C317CDE00CCC63A /* XZNumValidator.m in Sources */,
+				9F90FA3A1C316EE8002617FF /* BubbleView.m in Sources */,
+				9F90FA5D1C3170EF002617FF /* FMDatabase.m in Sources */,
+				9F90FA2A1C316C20002617FF /* XZWeekBar.m in Sources */,
+				9F90FA4C1C3170CC002617FF /* XZAttendanceModel.m in Sources */,
+				9F90FA5F1C3170EF002617FF /* FMDatabasePool.m in Sources */,
+				9F90FA4D1C3170CC002617FF /* XZNoteModel.m in Sources */,
+				9F90FA781C3174A6002617FF /* JKPopMenuItem.m in Sources */,
+				9F90FA4F1C3170CC002617FF /* XZTimetableModel.m in Sources */,
+				9F90FA611C3170EF002617FF /* FMResultSet.m in Sources */,
+				9F90FA351C316EE8002617FF /* BubbleChooseClassViewController.m in Sources */,
+				9FC5EE251C317CDE00CCC63A /* XZClassPickerVC.m in Sources */,
+				9F90FA4E1C3170CC002617FF /* XZTimetableDB.m in Sources */,
+				9FC5EE271C317CDE00CCC63A /* XZPickerView.m in Sources */,
+				9F90FA601C3170EF002617FF /* FMDatabaseQueue.m in Sources */,
+				9F90F9E51C316BA6002617FF /* AppDelegate.m in Sources */,
+				9F90FA2B1C316C20002617FF /* XZWeekBarItem.m in Sources */,
+				9F90FA271C316C20002617FF /* XZCurrentWeek.m in Sources */,
+				9F90F9E21C316BA6002617FF /* main.m in Sources */,
+				9F90FA501C3170CC002617FF /* XZTimetableService.m in Sources */,
+				9F90FA261C316C20002617FF /* XZClassCellView.m in Sources */,
+				9F90FA751C3174A6002617FF /* EAColourfulProgressView.m in Sources */,
+				9F90FA4B1C3170CC002617FF /* NSObject+Help.m in Sources */,
+				9F90FA761C3174A6002617FF /* FXBlurView.m in Sources */,
+				9F90FA5E1C3170EF002617FF /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9F90F9E91C316BA6002617FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F90F9EA1C316BA6002617FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F90F9EE1C316BA6002617FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F90F9EF1C316BA6002617FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F90F9F21C316BA6002617FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9F90F9F31C316BA6002617FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F90F9F51C316BA6002617FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = keptTimetable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxz.keptTimetable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9F90F9F61C316BA6002617FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = keptTimetable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxz.keptTimetable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F90F9D81C316BA6002617FF /* Build configuration list for PBXProject "keptTimetable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F90F9F21C316BA6002617FF /* Debug */,
+				9F90F9F31C316BA6002617FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F90F9F41C316BA6002617FF /* Build configuration list for PBXNativeTarget "keptTimetable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F90F9F51C316BA6002617FF /* Debug */,
+				9F90F9F61C316BA6002617FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F90F9D51C316BA6002617FF /* Project object */;
+}
