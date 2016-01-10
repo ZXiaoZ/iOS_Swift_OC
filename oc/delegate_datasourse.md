@@ -8,6 +8,7 @@ ___
 
 ###基本方法
 - manager
+
   ```
 1.创建协议
 @protocol JobDelegate <NSObject>
