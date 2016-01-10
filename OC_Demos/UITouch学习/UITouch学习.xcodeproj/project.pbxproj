@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F45D5481C082465001B8697 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F45D5471C082465001B8697 /* main.m */; };
+		9F45D54B1C082465001B8697 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F45D54A1C082465001B8697 /* AppDelegate.m */; };
+		9F45D5531C082465001B8697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F45D5521C082465001B8697 /* Assets.xcassets */; };
+		9F45D5561C082465001B8697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F45D5541C082465001B8697 /* LaunchScreen.storyboard */; };
+		9F45D55F1C08249F001B8697 /* ZXZLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F45D55E1C08249F001B8697 /* ZXZLine.m */; settings = {ASSET_TAGS = (); }; };
+		9F45D5621C0824B5001B8697 /* ZXZDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F45D5611C0824B5001B8697 /* ZXZDrawView.m */; settings = {ASSET_TAGS = (); }; };
+		9F45D5651C0824D2001B8697 /* ZXZDrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F45D5641C0824D2001B8697 /* ZXZDrawVC.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9F45D5431C082465001B8697 /* UITouch学习.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UITouch学习.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F45D5471C082465001B8697 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F45D5491C082465001B8697 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9F45D54A1C082465001B8697 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9F45D5521C082465001B8697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F45D5551C082465001B8697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F45D5571C082465001B8697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F45D55D1C08249F001B8697 /* ZXZLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXZLine.h; sourceTree = "<group>"; };
+		9F45D55E1C08249F001B8697 /* ZXZLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXZLine.m; sourceTree = "<group>"; };
+		9F45D5601C0824B5001B8697 /* ZXZDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXZDrawView.h; sourceTree = "<group>"; };
+		9F45D5611C0824B5001B8697 /* ZXZDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXZDrawView.m; sourceTree = "<group>"; };
+		9F45D5631C0824D2001B8697 /* ZXZDrawVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXZDrawVC.h; sourceTree = "<group>"; };
+		9F45D5641C0824D2001B8697 /* ZXZDrawVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXZDrawVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F45D5401C082465001B8697 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F45D53A1C082465001B8697 = {
+			isa = PBXGroup;
+			children = (
+				9F45D55D1C08249F001B8697 /* ZXZLine.h */,
+				9F45D55E1C08249F001B8697 /* ZXZLine.m */,
+				9F45D5601C0824B5001B8697 /* ZXZDrawView.h */,
+				9F45D5611C0824B5001B8697 /* ZXZDrawView.m */,
+				9F45D5631C0824D2001B8697 /* ZXZDrawVC.h */,
+				9F45D5641C0824D2001B8697 /* ZXZDrawVC.m */,
+				9F45D5451C082465001B8697 /* UITouch学习 */,
+				9F45D5441C082465001B8697 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F45D5441C082465001B8697 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F45D5431C082465001B8697 /* UITouch学习.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F45D5451C082465001B8697 /* UITouch学习 */ = {
+			isa = PBXGroup;
+			children = (
+				9F45D5491C082465001B8697 /* AppDelegate.h */,
+				9F45D54A1C082465001B8697 /* AppDelegate.m */,
+				9F45D5521C082465001B8697 /* Assets.xcassets */,
+				9F45D5541C082465001B8697 /* LaunchScreen.storyboard */,
+				9F45D5571C082465001B8697 /* Info.plist */,
+				9F45D5461C082465001B8697 /* Supporting Files */,
+			);
+			path = "UITouch学习";
+			sourceTree = "<group>";
+		};
+		9F45D5461C082465001B8697 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F45D5471C082465001B8697 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F45D5421C082465001B8697 /* UITouch学习 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F45D55A1C082465001B8697 /* Build configuration list for PBXNativeTarget "UITouch学习" */;
+			buildPhases = (
+				9F45D53F1C082465001B8697 /* Sources */,
+				9F45D5401C082465001B8697 /* Frameworks */,
+				9F45D5411C082465001B8697 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UITouch学习";
+			productName = "UITouch学习";
+			productReference = 9F45D5431C082465001B8697 /* UITouch学习.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F45D53B1C082465001B8697 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = zxz;
+				TargetAttributes = {
+					9F45D5421C082465001B8697 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = J49RT79283;
+					};
+				};
+			};
+			buildConfigurationList = 9F45D53E1C082465001B8697 /* Build configuration list for PBXProject "UITouch学习" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F45D53A1C082465001B8697;
+			productRefGroup = 9F45D5441C082465001B8697 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F45D5421C082465001B8697 /* UITouch学习 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F45D5411C082465001B8697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F45D5561C082465001B8697 /* LaunchScreen.storyboard in Resources */,
+				9F45D5531C082465001B8697 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F45D53F1C082465001B8697 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F45D55F1C08249F001B8697 /* ZXZLine.m in Sources */,
+				9F45D5621C0824B5001B8697 /* ZXZDrawView.m in Sources */,
+				9F45D5651C0824D2001B8697 /* ZXZDrawVC.m in Sources */,
+				9F45D54B1C082465001B8697 /* AppDelegate.m in Sources */,
+				9F45D5481C082465001B8697 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9F45D5541C082465001B8697 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F45D5551C082465001B8697 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F45D5581C082465001B8697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F45D5591C082465001B8697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F45D55B1C082465001B8697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "UITouch学习/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zxz.UITouch--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9F45D55C1C082465001B8697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "UITouch学习/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zxz.UITouch--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F45D53E1C082465001B8697 /* Build configuration list for PBXProject "UITouch学习" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F45D5581C082465001B8697 /* Debug */,
+				9F45D5591C082465001B8697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F45D55A1C082465001B8697 /* Build configuration list for PBXNativeTarget "UITouch学习" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F45D55B1C082465001B8697 /* Debug */,
+				9F45D55C1C082465001B8697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F45D53B1C082465001B8697 /* Project object */;
+}
