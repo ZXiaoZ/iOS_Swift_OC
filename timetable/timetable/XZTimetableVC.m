@@ -9,6 +9,9 @@
 #import "XZTimetableVC.h"
 
 @interface XZTimetableVC ()<XZTimetableViewDataSourse,XZTimetableViewDelegate,JKPopMenuViewSelectDelegate>
+{
+    UIVisualEffectView *visualView;
+}
 @property (nonatomic ,strong) XZTimetableView *timetableView;
 @property (nonatomic ,strong) XZWeekBar *weekBar;
 @property (nonatomic ,strong) NSArray *allTimetable;
@@ -27,17 +30,15 @@
     [super viewDidLoad];
 
     UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
-    UIVisualEffectView *visualView = [[UIVisualEffectView alloc]initWithEffect:blurEffect];
+    visualView = [[UIVisualEffectView alloc]initWithEffect:blurEffect];
     visualView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     [self.view addSubview:visualView];
+    //add toolBar
+    [self addTopAndBottomBar];
     
-    UIToolbar *topbar = [[UIToolbar alloc]init];
-    topbar.frame = CGRectMake(0, 0, self.view.frame.size.width, 44);
-    topbar.barTintColor = [UIColor colorWithRed:247.0/255.0 green:237/255.0 blue:237/255.0 alpha:0.9];
-    [visualView.contentView addSubview:topbar];
-    
+    //main contentView
     self.weekBar = [[XZWeekBar alloc]initWithFrame:CGRectMake(0, 44, self.view.frame.size.width, self.view.frame.size.width/5.0)];
-    self.weekBar.backgroundColor = topbar.barTintColor;
+//    self.weekBar.backgroundColor = topbar.barTintColor;
     [visualView.contentView addSubview:self.weekBar];
     
     self.timetableView = [[XZTimetableView alloc]init];
@@ -46,10 +47,7 @@
     self.timetableView.delegate = self;
     self.timetableView.dataSourse = self;
     
-    UIToolbar *bottomBar = [[UIToolbar alloc]init];
-    bottomBar.frame = CGRectMake(0, self.view.frame.size.height - 44.0, self.view.frame.size.width, 44.0);
-    bottomBar.backgroundColor = [UIColor colorWithHue:360 saturation:21 brightness:24 alpha:1.0];
-    [visualView.contentView addSubview:bottomBar];
+  
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -132,7 +130,7 @@
     [popView show];
     
 }
-//jkpop delegate
+#pragma - mark jkpop delegate
 -(void)popMenuViewSelectIndex:(NSInteger)index{
     
 }
@@ -159,5 +157,39 @@
     NSLog(@"select Recise view");
 }
 
+#pragma -mark topBar and bottomBar
+- (void)addTopAndBottomBar {
+    UIToolbar *topbar = [[UIToolbar alloc]init];
+    topbar.frame = CGRectMake(0, 0, self.view.frame.size.width, 44);
+    topbar.barTintColor = [UIColor colorWithRed:247.0/255.0 green:237/255.0 blue:237/255.0 alpha:0.9];
+    [visualView.contentView addSubview:topbar];
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backButtonAction:)];
+    topbar.items = @[backButton];
+    
+    UIToolbar *bottomBar = [[UIToolbar alloc]init];
+    bottomBar.frame = CGRectMake(0, self.view.frame.size.height - 44.0, self.view.frame.size.width, 44.0);
+    bottomBar.backgroundColor = [UIColor colorWithHue:360 saturation:21 brightness:24 alpha:1.0];
+    [visualView.contentView addSubview:bottomBar];
+    UIBarButtonItem *backToCurrentWeekButton = [[UIBarButtonItem alloc]initWithTitle:@"本周" style:UIBarButtonItemStylePlain target:self action:@selector(backToCurrentWeekAction:)];
+    UIBarButtonItem *nextWeekButton = [[UIBarButtonItem alloc]initWithTitle:@"下周" style:UIBarButtonItemStylePlain target:self action:@selector(nextWeekAction:)];
+    UIBarButtonItem *remindButton = [[UIBarButtonItem alloc]initWithTitle:@"提醒" style:UIBarButtonItemStylePlain target:self action:@selector(remindAction:)];
+    
+    UIBarButtonItem *flexibleButton=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    bottomBar.items = @[backToCurrentWeekButton,flexibleButton,remindButton,flexibleButton,nextWeekButton];
+}
+- (void)backButtonAction:(id )sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+#warning need to be completed
+-(void)backToCurrentWeekAction:(id)sender {
+    NSLog(@"backToCurrentWeek ");
+}
+-(void)nextWeekAction:(id)sender {
+    NSLog(@"nextWeekAction ");
+}
+-(void)remindAction:(id)sender {
+    NSLog(@"remindAction ");
+
+}
 
 @end

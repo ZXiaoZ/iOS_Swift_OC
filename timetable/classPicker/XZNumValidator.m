@@ -45,7 +45,8 @@
             NSString *result = [url substringWithRange:match.range];
             NSLog(@"%@",result);
         }
-    } else { // 如果有错误，则把错误打印出来
+    } else {
+        // 如果有错误，则把错误打印出来
         NSLog(@"error - %@", error);
     }
     return [NSArray new];
